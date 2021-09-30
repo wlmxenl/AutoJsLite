@@ -90,7 +90,7 @@ public class CodeEditText extends AppCompatEditText {
         // 设值背景透明
         setBackgroundColor(Color.TRANSPARENT);
         // 设置字体颜色
-        setTextColor(Color.TRANSPARENT);
+        setTextColor(Color.parseColor("#333333"));
         // 设置字体
         setTypeface(Typeface.MONOSPACE);
         setHorizontallyScrolling(true);
