@@ -7,6 +7,8 @@
 ## 简介
 一个支持无障碍服务的Android平台上的JavaScript IDE，其发展目标是JsBox和Workflow。
 
+下载地址：![](https://www.pgyer.com/app/qrcode/B4uY)
+
 同时有[VS Code 插件](https://github.com/hyb1996/Auto.js-VSCode-Extension)可提供基础的在桌面开发的功能。
 
 官方文档：https://hyb1996.github.io/AutoJs-Docs/
