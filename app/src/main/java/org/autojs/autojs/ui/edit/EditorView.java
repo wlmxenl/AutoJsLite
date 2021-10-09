@@ -407,7 +407,8 @@ public class EditorView extends FrameLayout implements CodeCompletionBar.OnHintC
 
     public Observable<String> save() {
         String path = mUri.getPath();
-        PFiles.move(path, path + ".bak");
+        String backPath = path + ".bak";
+        PFiles.move(path, backPath);
         return Observable.just(mEditor.getText())
                 .observeOn(Schedulers.io())
                 .doOnNext(s -> PFiles.write(getContext().getContentResolver().openOutputStream(mUri), s))
@@ -415,7 +416,9 @@ public class EditorView extends FrameLayout implements CodeCompletionBar.OnHintC
                 .doOnNext(s -> {
                     mEditor.markTextAsSaved();
                     setMenuItemStatus(R.id.save, false);
-                });
+                })
+                // 将备份文件删除
+                .doOnNext(s -> new File(backPath).delete());
     }
 
     public void forceStop() {

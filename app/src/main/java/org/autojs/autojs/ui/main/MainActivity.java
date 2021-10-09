@@ -39,6 +39,7 @@ import org.autojs.autojs.ui.BaseActivity;
 import org.autojs.autojs.ui.common.NotAskAgainDialog;
 import org.autojs.autojs.ui.doc.DocsFragment;
 import org.autojs.autojs.ui.floating.FloatyWindowManger;
+import org.autojs.autojs.ui.log.LogActivity;
 import org.autojs.autojs.ui.main.scripts.MyScriptListFragment;
 import org.autojs.autojs.ui.main.task.TaskManagerFragment;
 import org.autojs.autojs.ui.settings.SettingsActivity;
@@ -274,6 +275,8 @@ public class MainActivity extends BaseActivity implements OnActivityResultDelega
         if (item.getItemId() == R.id.action_log) {
             if (mDocsSearchItemExpanded) {
                 submitForwardQuery();
+            } else {
+                startActivity(new Intent(this, LogActivity.class));
             }
             return true;
         }

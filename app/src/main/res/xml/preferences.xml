@@ -71,7 +71,6 @@
             android:key="@string/key_script_dir_path"
             android:layout="@layout/preference_custom"
             android:title="@string/text_change_script_dir" />
-        android:
     </com.stardust.theme.preference.ThemeColorPreferenceCategory>
 
     <com.stardust.theme.preference.ThemeColorPreferenceCategory
