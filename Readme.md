@@ -4,8 +4,10 @@
 > 1. 删除应用统计相关代码
 > 2. 删除社区、版本更新等废弃模块
 
+此项目只推荐在模拟器上挂游戏用，有其他玩法需求的建议使用 [Auto.js Pro](https://pro.autojs.org/) 
+
 ## 简介
-一个支持无障碍服务的Android平台上的JavaScript IDE，其发展目标是JsBox和Workflow。
+一个支持无障碍服务的Android平台上的JavaScript IDE。
 
 下载地址：![](https://www.pgyer.com/app/qrcode/B4uY)
 
